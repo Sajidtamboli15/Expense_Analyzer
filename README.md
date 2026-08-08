@@ -8,7 +8,7 @@ A Python web application to track and analyze expenses with machine learning cat
 * Add, delete, and view expenses
 * CSV upload with auto-categorization
 * Machine learning model for category prediction
-* Interactive charts (Pie & Bar) using Plotly
+* Interactive charts (Pie & Bar) 
 
 ## Tech Stack
 
