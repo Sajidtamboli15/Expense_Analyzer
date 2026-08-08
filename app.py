@@ -175,7 +175,7 @@ def csv_page():
         df.columns = [c.strip().lower() for c in df.columns]
 
         if "description" not in df.columns or "amount" not in df.columns:
-            flash("❌ CSV must have 'Description' and 'Amount' columns.", "danger")
+            flash("CSV must have 'Description' and 'Amount' columns.", "danger")
             return render_template("csv.html")
 
         df["Predicted_Category"] = df["description"].apply(lambda x: predict_with_threshold(str(x)))
